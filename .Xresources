@@ -1,0 +1,58 @@
+! special
+*.foreground:   #bf2be8
+*.background:   #000000
+*.cursorColor:  #bf2be8
+
+! black
+*.color0:       #2e3436
+*.color8:       #555753
+
+! red
+*.color1:       #cc0000
+*.color9:       #ef2929
+
+! green
+*.color2:       #4e9a06
+*.color10:      #8ae234
+
+! yellow
+*.color3:       #c4a000
+*.color11:      #fce94f
+
+! blue
+*.color4:       #3465a4
+*.color12:      #729fcf
+
+! magenta
+*.color5:       #75507b
+*.color13:      #ad7fa8
+
+! cyan
+*.color6:       #06989a
+*.color14:      #34e2e2
+
+! white
+*.color7:       #d3d7cf
+*.color15:      #34e2e2
+
+!set font type/size
+URxvt.font:     xft:monospace:bold:size=15
+
+!remove scrollBar
+URxvt.scrollBar:  false
+
+URxvt.keysym.Shift-Up: /
+
+!set perl folder
+URxvt.perl-lib: $HOME/.urxvt/ext/
+
+!perls import
+URxvt.perls-ext-common: default,matcher,resize-font,fullscreen
+
+!change font size
+URxvt.keysym.C-k:   font-size:increase
+URxvt.keysym.C-j:   font-size:decrease
+URxvt.keysym.C-equal:   font-size:reset
+
+!put terminal on fullscreen
+URxvt.keysym.F11: perl:fullscreen:switch
