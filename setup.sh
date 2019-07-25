@@ -17,6 +17,7 @@ xrdb $HOME/.Xresources
 cp -rf i3 $HOME/.config/i3
 
 # Ranger config
+sudo apt install ranger
 cp -rf ranger $HOME/.config/ranger
 
 # Bash config
