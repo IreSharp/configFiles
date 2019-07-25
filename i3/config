@@ -190,3 +190,6 @@ gaps inner 15
 
 bindsym $mod+shift+plus gaps inner current plus 5
 bindsym $mod+shift+minus gaps inner current minus 5
+
+# Fade effect on transition
+exec_always compton -f
