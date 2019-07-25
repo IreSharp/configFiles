@@ -193,3 +193,9 @@ bindsym $mod+shift+minus gaps inner current minus 5
 
 # Fade effect on transition
 exec_always compton -f
+
+# lockscreen
+bindsym $alt+l exec $HOME/.config/i3/lock.sh>log.txt
+
+# open redshift
+exec redshift-gtk
