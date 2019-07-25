@@ -9,6 +9,7 @@ cd ../../
 sudo apt-get install libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool -y && wget http://ppa.launchpad.net/tehtotalpwnage/ppa/ubuntu/pool/main/c/cava/cava_0.6.0-0ubuntu3_amd64.deb && sudo dpkg -i cava*
 
 # urxvt config
+sudo apt install urxvt-unicode w3m w3m-img
 cp .Xresources $HOME/.Xresources
 xrdb $HOME/.Xresources
 
