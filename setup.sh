@@ -5,9 +5,19 @@ sudo apt install git libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util
 
 cd ../../
 
+# Install cava
+sudo apt-get install libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev libtool -y && wget http://ppa.launchpad.net/tehtotalpwnage/ppa/ubuntu/pool/main/c/cava/cava_0.6.0-0ubuntu3_amd64.deb && sudo dpkg -i cava*
+
+# urxvt config
 cp .Xresources $HOME/.Xresources
-cp -rf i3 $HOME/.config/i3
-cp -rf ranger $HOME/.config/ranger
-cp -rf .bashrc $HOME/
 xrdb $HOME/.Xresources
+
+# i3 config
+cp -rf i3 $HOME/.config/i3
+
+# Ranger config
+cp -rf ranger $HOME/.config/ranger
+
+# Bash config
+cp -rf .bashrc $HOME/
 bash
