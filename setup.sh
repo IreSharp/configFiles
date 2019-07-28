@@ -11,19 +11,15 @@ sudo apt-get install libfftw3-dev libasound2-dev libncursesw5-dev libpulse-dev l
 
 # urxvt config
 sudo apt install urxvt-unicode w3m w3m-img
-cp .Xresources $HOME/.Xresources
+rsync -av .Xresources $HOME/.Xresources
 xrdb $HOME/.Xresources
 
 # install compton
 sudo apt install compton
 
 # i3 config
-cp -rf i3 $HOME/.config/i3
+rsync -av i3 $HOME/.config/i3
 
 # Ranger config
 sudo apt install ranger
-cp -rf ranger $HOME/.config/ranger
-
-# Bash config
-cp -rf .bashrc $HOME/
-bash
+rsync -av ranger $HOME/.config/ranger
