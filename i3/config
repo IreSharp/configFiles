@@ -205,3 +205,6 @@ bindsym $mod+c exec gnome-control-center
 
 # set wallpaper
 exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/wallpaper.jpg
+
+# reload urxvt when i3 restart 
+exec_always --no-startup-id xrdb .Xresources
