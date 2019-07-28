@@ -35,16 +35,23 @@
 *.color7:       #d3d7cf
 *.color15:      #34e2e2
 
+!set transparenct
+URxvt.transparent:  true
+
+!set Shading
+URxvt.shading:      40
+
 !set font type/size
 URxvt.font:     xft:monospace:bold:size=15
 
 !remove scrollBar
 URxvt.scrollBar:  false
 
+!print '/'
 URxvt.keysym.Shift-Up: /
 
 !set perl folder
-URxvt.perl-lib: $HOME/.urxvt/ext/
+URxvt.perl-lib: /usr/lib/urxvt/perl/
 
 !perls import
 URxvt.perls-ext-common: default,matcher,resize-font,fullscreen
@@ -53,6 +60,3 @@ URxvt.perls-ext-common: default,matcher,resize-font,fullscreen
 URxvt.keysym.C-k:   font-size:increase
 URxvt.keysym.C-j:   font-size:decrease
 URxvt.keysym.C-equal:   font-size:reset
-
-!put terminal on fullscreen
-URxvt.keysym.F11: perl:fullscreen:switch
