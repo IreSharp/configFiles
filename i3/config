@@ -200,11 +200,8 @@ bindsym $alt+l exec $HOME/.config/i3/lock.sh>log.txt
 # open redshift
 exec redshift-gtk
 
-#gnome system configs
+# gnome system configs
 bindsym $mod+c exec gnome-control-center
-#bindsym $mod+w exec gnome-control-center wifi
-#bindsym $mod+b exec gnome-control-center bluetooth
-#bindsym $mod+d exec gnome-control-center display
-#bindsym $mod+n exec gnome-control-center network
-#bindsym $mod+p exec gnome-control-center power
-#bindsym $mod+s exec gnome-control-center sound
+
+# set wallpaper
+exec --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/wallpaper.jpg
